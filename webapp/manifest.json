@@ -98,17 +98,17 @@
 					]
 				},
 					{
-					"name": "jobprofile",
-					"pattern": "jobprofile",
+					"name": "myprofile",
+					"pattern": "myprofile",
 					"target": [
-						"jobprofile"
+						"myprofile"
 					]
 				}
 			],
 			"targets": {
 				"home": {
 					"viewType": "XML",
-					"transition": "slide",
+					"transition": "flip",
 					"clearAggregation": true,
 					"viewName": "Home"
 				},
@@ -120,15 +120,15 @@
 				},
 				"career": {
 					"viewType": "XML",
-					"transition": "slide",
+					"transition": "flip",
 					"clearAggregation": true,
 					"viewName": "career"
 				},
-				"jobprofile": {
+				"myprofile": {
 					"viewType": "XML",
 					"transition": "slide",
 					"clearAggregation": true,
-					"viewName": "jobprofile"
+					"viewName": "myprofile"
 				}
 			}
 		}

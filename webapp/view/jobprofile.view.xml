@@ -1,7 +1,0 @@
-<mvc:View controllerName="coolapp1.coolapp1.controller.jobprofile" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
-	<Page title="{i18n>JOB PROFILE}">
-		<content>
-		</content>
-	</Page>
-</mvc:View>

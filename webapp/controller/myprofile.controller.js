@@ -2,7 +2,7 @@ sap.ui.define(['jquery.sap.global','sap/ui/core/mvc/Controller','sap/ui/model/js
 	function(jQuery, Controller, JSONModel) {
 	"use strict";
 
-	var menuController = Controller.extend("coolapp1.coolapp1.controller.jobprofile", {
+	var menuController = Controller.extend("coolapp1.coolapp1.controller.myprofile", {
 	});
 	
 	return menuController;

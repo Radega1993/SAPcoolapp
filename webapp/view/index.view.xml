@@ -16,7 +16,7 @@
 					<tnt:NavigationListItem text="HOME" icon="sap-icon://home" key="Home"></tnt:NavigationListItem>
 					<tnt:NavigationListItem text="Course" icon="sap-icon://activities" key="course"></tnt:NavigationListItem>
 					<tnt:NavigationListItem text="Career" icon="sap-icon://accidental-leave" key="career"></tnt:NavigationListItem>
-					<tnt:NavigationListItem text="Job Profile" icon="sap-icon://customer" key="jobprofile"></tnt:NavigationListItem>
+					<tnt:NavigationListItem text="My Profile" icon="sap-icon://customer" key="myprofile"></tnt:NavigationListItem>
 				</tnt:NavigationList>
 			</tnt:SideNavigation>
 		</tnt:sideContent>
