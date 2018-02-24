@@ -3,58 +3,52 @@
 	<Page title="{i18n>CAREER}">
 		<content>
 			<Panel expandable="true" expanded="false" headerText="CAR LICENSE -----> final mark: 28 ✓✓" width="auto" class="sapUiResponsiveMargin">
-			<Table items="{CarLicense>/mydata}">
-				<columns>
-					<Column width="12em">
-						<Text text="Activity"/>
-					</Column>
-					<Column minScreenWidth="Tablet" demandPopin="true">
-						<Text text="Description"/>
-					</Column>
-					<Column minScreenWidth="Tablet" demandPopin="true">
-						<Text text="Mark"/>
-					</Column>
-				</columns>
-				<items>
-					<ColumnListItem>
-						<cells>
-							<ObjectIdentifier title="{CarLicense>Activity}" class="sapMTableContentMargin"/>
-							<Text text="{CarLicense>Description}"/>
-							<ObjectNumber number="{CarLicense>Mark}" state="{
-						path: 'CarLicense>Mark',
-						formatter: '.descriptionColor'
-					}"/>
-						</cells>
-					</ColumnListItem>
-				</items>
-			</Table>
+				<Table items="{CarLicense>/mydata}">
+					<columns>
+						<Column width="12em">
+							<Text text="Activity"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Description"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Mark"/>
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem>
+							<cells>
+								<ObjectIdentifier title="{CarLicense>Activity}" class="sapMTableContentMargin"/>
+								<Text text="{CarLicense>Description}"/>
+								<ObjectNumber number="{CarLicense>Mark}" state="{ path: 'CarLicense>Mark', formatter: '.descriptionColor' }"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
 			</Panel>
 			<Panel expandable="true" expanded="false" headerText="MATERIALS -----> final mark: 32 ✓✓" width="auto" class="sapUiResponsiveMargin">
-			<Table items="{MaterialsCourse>/mydata}">
-				<columns>
-					<Column width="12em">
-						<Text text="Activity"/>
-					</Column>
-					<Column minScreenWidth="Tablet" demandPopin="true">
-						<Text text="Description"/>
-					</Column>
-					<Column minScreenWidth="Tablet" demandPopin="true">
-						<Text text="Mark"/>
-					</Column>
-				</columns>
-				<items>
-					<ColumnListItem>
-						<cells>
-							<ObjectIdentifier title="{MaterialsCourse>Activity}" class="sapMTableContentMargin"/>
-							<Text text="{MaterialsCourse>Description}"/>
-							<ObjectNumber number="{MaterialsCourse>Mark}" state="{
-						path: 'MaterialsCourse>Mark',
-						formatter: '.descriptionColor'
-					}"/>
-						</cells>
-					</ColumnListItem>
-				</items>
-			</Table>
+				<Table items="{MaterialsCourse>/mydata}">
+					<columns>
+						<Column width="12em">
+							<Text text="Activity"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Description"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Mark"/>
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem>
+							<cells>
+								<ObjectIdentifier title="{MaterialsCourse>Activity}" class="sapMTableContentMargin"/>
+								<Text text="{MaterialsCourse>Description}"/>
+								<ObjectNumber number="{MaterialsCourse>Mark}" state="{ path: 'MaterialsCourse>Mark', formatter: '.descriptionColor' }"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
 			</Panel>
 		</content>
 	</Page>
