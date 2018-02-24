@@ -1,51 +1,11 @@
 <mvc:View controllerName="coolapp1.coolapp1.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
+	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:l="sap.ui.layout">
 	<Page title="{i18n>HOME}">
 		<content>
-			<Carousel class="sapUiContentPadding" loop="true">
-				<pages>
-					<Image src="img/pic1.jpg" alt="Example picture of speakers"/>
-					<Image src="img/pic2.jpg" alt="Example picture of USB flash drive"/>
-					<Image src="img/pic3.jpg" alt="Example picture of spotlight"/>
-					<Image src="img/pic4.jpg" alt="Example picture of screw"/>
-				</pages>
-			</Carousel>
-			<Table items="{EmployeeDataTable>/mydata}">
-				<columns>
-					<Column width="12em">
-						<Text text="Name"/>
-					</Column>
-					<Column minScreenWidth="Tablet" demandPopin="true">
-						<Text text="Salary"/>
-					</Column>
-				</columns>
-				<items>
-					<ColumnListItem>
-						<cells>
-							<ObjectIdentifier title="{EmployeeDataTable>name}" class="sapMTableContentMargin"/>
-							<Text text="{EmployeeDataTable>salary}"/>
-						</cells>
-					</ColumnListItem>
-				</items>
-			</Table>
-			<Table items="{CourseDataTable>/mydata}">
-				<columns>
-					<Column width="12em">
-						<Text text="Name"/>
-					</Column>
-					<Column minScreenWidth="Tablet" demandPopin="true">
-						<Text text="Salary"/>
-					</Column>
-				</columns>
-				<items>
-					<ColumnListItem>
-						<cells>
-							<ObjectIdentifier title="{CourseDataTable>name}" class="sapMTableContentMargin"/>
-							<Text text="{CourseDataTable>salary}"/>
-						</cells>
-					</ColumnListItem>
-				</items>
-			</Table>
+			<l:VerticalLayout>
+				<Text text="Welcome back, Jum \n You worked 8h today. \n You earned $10 and 5 points. \n Next position: Truck Driver. \n \n ."/>
+				<Image src="https://raw.githubusercontent.com/moschan/react-native-progress-bar-classic/HEAD/doc/balloon.jpg" width="400px"></Image>
+			</l:VerticalLayout>
 		</content>
 	</Page>
 </mvc:View>
