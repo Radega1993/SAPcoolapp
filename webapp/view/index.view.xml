@@ -7,33 +7,59 @@
 					
 					
 					
-<Table items="{EmployeeDataTable>/mydata}">
-    <columns>
-      <Column
-        width="12em">
-        <Text text="Name" />
-      </Column>
-       <Column
-        minScreenWidth="Tablet"
-        demandPopin="true">
-        <Text text="Salary" />
-      </Column>
-    </columns>
-
-
-<items>
-      <ColumnListItem>
-        <cells>
-          <ObjectIdentifier
-            title="{EmployeeDataTable>name}"
-            class="sapMTableContentMargin" />
-          <Text
-            text="{EmployeeDataTable>salary}" />
-        </cells>
-      </ColumnListItem>
-    </items>
-  </Table>
+				<Table items="{EmployeeDataTable>/mydata}">
+				    <columns>
+				      <Column
+				        width="12em">
+				        <Text text="Name" />
+				      </Column>
+				       <Column
+				        minScreenWidth="Tablet"
+				        demandPopin="true">
+				        <Text text="Salary" />
+				      </Column>
+				    </columns>
+				
+				
+				<items>
+				      <ColumnListItem>
+				        <cells>
+				          <ObjectIdentifier
+				            title="{EmployeeDataTable>name}"
+				            class="sapMTableContentMargin" />
+				          <Text
+				            text="{EmployeeDataTable>salary}" />
+				        </cells>
+				      </ColumnListItem>
+				    </items>
+				  </Table>
     
+    			<Table items="{CourseDataTable>/mydata}">
+				    <columns>
+				      <Column
+				        width="12em">
+				        <Text text="Name" />
+				      </Column>
+				       <Column
+				        minScreenWidth="Tablet"
+				        demandPopin="true">
+				        <Text text="Salary" />
+				      </Column>
+				    </columns>
+				
+				
+				<items>
+				      <ColumnListItem>
+				        <cells>
+				          <ObjectIdentifier
+				            title="{CourseDataTable>name}"
+				            class="sapMTableContentMargin" />
+				          <Text
+				            text="{CourseDataTable>salary}" />
+				        </cells>
+				      </ColumnListItem>
+				    </items>
+				  </Table>
     
 				</content>
 			</Page>

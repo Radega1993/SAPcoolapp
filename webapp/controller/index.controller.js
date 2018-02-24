@@ -6,6 +6,7 @@ sap.ui.define([
 	return Controller.extend("coolapp1.coolapp1.controller.index", {
 		onInit: function(){
 			this.getView().setModel(models.createDataTableModel(),"EmployeeDataTable");
+			this.getView().setModel(models.createCourseTableModel(),"CourseDataTable");
 		}
 	});
 });
