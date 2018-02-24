@@ -2,8 +2,46 @@
 	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
 	<Page title="{i18n>MY PROFILE}">
 		<content>
-			
-			
+<Table items="{PersonalCourse>/mydata}">
+				<columns>
+					<Column width="12em">
+						<Text text="My Info"/>
+					</Column>
+										<Column width="12em">
+						<Text text=""/>
+					</Column>
+
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier title="{PersonalCourse>Activity}" class="sapMTableContentMargin"/>
+							<Text text="{PersonalCourse>Description}"/>
+							<Text text="{PersonalCourse>Mark}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+
+
+<Table items="{PersonalJob>/mydata}">
+				<columns>
+					<Column width="12em">
+						<Text text="My Job"/>
+					</Column>
+				<Column width="12em">
+						<Text text=""/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier title="{PersonalJob>Activity}" class="sapMTableContentMargin"/>
+							<Text text="{PersonalJob>Description}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>	
 		</content>
 	</Page>
 </mvc:View>
