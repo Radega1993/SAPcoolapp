@@ -12,7 +12,7 @@
 			</tnt:header>
 			<tnt:sideContent>
 				<tnt:SideNavigation expanded="true" itemSelect="onMenuItem">
-					<tnt:NavigationList>
+					<tnt:NavigationList> 
 						<tnt:NavigationListItem text="HOME" icon="sap-icon://home" key="Home"></tnt:NavigationListItem>
 						<tnt:NavigationListItem text="Course" icon="sap-icon://activities" key="course"></tnt:NavigationListItem>
 						<tnt:NavigationListItem text="Career" icon="sap-icon://accidental-leave" key="career"></tnt:NavigationListItem>
