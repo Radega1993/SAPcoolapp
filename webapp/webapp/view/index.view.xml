@@ -1,0 +1,42 @@
+<mvc:View controllerName="coolapp1.coolapp1.controller.index" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					
+					
+					
+<Table items="{EmployeeDataTable>/mydata}">
+    <columns>
+      <Column
+        width="12em">
+        <Text text="Name" />
+      </Column>
+       <Column
+        minScreenWidth="Tablet"
+        demandPopin="true">
+        <Text text="Salary" />
+      </Column>
+    </columns>
+
+
+<items>
+      <ColumnListItem>
+        <cells>
+          <ObjectIdentifier
+            title="{EmployeeDataTable>name}"
+            class="sapMTableContentMargin" />
+          <Text
+            text="{EmployeeDataTable>salary}" />
+        </cells>
+      </ColumnListItem>
+    </items>
+  </Table>
+    
+    
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
