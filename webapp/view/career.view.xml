@@ -2,7 +2,49 @@
 	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
 	<Page title="{i18n>CAREER}">
 		<content>
-
+			<Table items="{Bulldozercourse>/mydata}">
+				<columns>
+					<Column width="12em">
+						<Text text="Activity"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Description"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Mark"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier title="{Bulldozercourse>Activity}" class="sapMTableContentMargin"/>
+							<Text text="{Bulldozercourse>Description}"/>
+							<Text text="{Bulldozercourse>Mark}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+			<List headerText="Done">
+				<items>
+					<StandardListItem title="Healthy at work"/>
+					<StandardListItem title="Truck course"/>
+					<StandardListItem title="Drone course"/>
+					<StandardListItem title="Maintenance course"/>
+				</items>
+			</List>
+			<List headerText="Current">
+				<items>
+					<StandardListItem title="Bulldozer course"/>
+					<StandardListItem title="Safety and security 1"/>
+				</items>
+			</List>
+			<List headerText="Next">
+				<items>
+					<StandardListItem title="Tractor course"/>
+					<StandardListItem title="Safety and security 2"/>
+					<StandardListItem title="Manager course"/>
+				</items>
+			</List>
 		</content>
 	</Page>
 </mvc:View>
