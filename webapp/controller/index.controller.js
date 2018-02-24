@@ -8,6 +8,8 @@ sap.ui.define([
 			this.getView().setModel(models.createDataTableModel2(),"Bulldozercourse");
 			this.getView().setModel(models.createDataTableModel3(),"CarLicense");
 			this.getView().setModel(models.createDataTableModel4(),"MaterialsCourse");
+			this.getView().setModel(models.createDataTableModel5(),"PersonalCourse");
+			this.getView().setModel(models.createDataTableModel6(),"PersonalJob");
 		},
 		onMenuItem: function(event){
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);

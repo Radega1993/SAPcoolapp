@@ -3,7 +3,8 @@
 	<Page title="{i18n>HOME}">
 		<content>
 			<l:VerticalLayout>
-				<Text title="Page Header Title" titleLevel="H2" text="Welcome back, Jum \n You worked 8h today. \n You earned $10 and 5 points. \n Next position: Truck Driver. \n \n ."/>
+				<Text title="Page Header Title" titleLevel="H2" text="Welcome back, Jum \n You worked 8h today. \n You earned $10 and 5 points. \n Next position: Truck Driver."/>
+				<HBox></HBox>
 				<Image src="https://raw.githubusercontent.com/moschan/react-native-progress-bar-classic/HEAD/doc/balloon.jpg" width="400px"></Image>
 			</l:VerticalLayout>
 		</content>

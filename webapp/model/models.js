@@ -43,8 +43,8 @@ sap.ui.define([
 			oModel.setDefaultBindingMode("OneWay");
 			return oModel;
 		},
-		
-			createDataTableModel3: function() {
+
+		createDataTableModel3: function() {
 			var oModel = new JSONModel({
 				"mydata": [{
 					"Activity": "Introduction",
@@ -53,7 +53,7 @@ sap.ui.define([
 				}, {
 					"Activity": "Theorical Examen",
 					"Description": "Real test of the car license",
-					"Mark": "4"
+					"Mark": "5"
 				}, {
 					"Activity": "Circuit test",
 					"Description": "Closed circuit with the car",
@@ -69,14 +69,14 @@ sap.ui.define([
 				}, {
 					"Activity": "Total",
 					"Description": "At least 25 points to pass",
-					"Mark": "27"
+					"Mark": "28"
 				}]
 			});
 			oModel.setDefaultBindingMode("OneWay");
 			return oModel;
 		},
-		
-			createDataTableModel4: function() {
+
+		createDataTableModel4: function() {
 			var oModel = new JSONModel({
 				"mydata": [{
 					"Activity": "Introduction",
@@ -106,6 +106,48 @@ sap.ui.define([
 			});
 			oModel.setDefaultBindingMode("OneWay");
 			return oModel;
+		},
+		createDataTableModel5: function() {
+
+			var oModel = new JSONModel({
+				"mydata": [{
+					"Activity": "Name",
+					"Description": "Yung"
+				}, {
+					"Activity": "Surname",
+					"Description": "Yu"
+				}, {
+					"Activity": "Street",
+					"Description": "Long Island Street 123"
+				}, {
+					"Activity": "Country",
+					"Description": "Japan"
+				}, {
+					"Activity": "City",
+					"Description": "Tokyo"
+				}, {
+					"Activity": "Phone",
+					"Description": "657 89 76 54"
+				}]
+			});
+			oModel.setDefaultBindingMode("OneWay");
+			return oModel;
+		},
+
+		createDataTableModel6: function() {
+
+			var oModel = new JSONModel({
+				"mydata": [{
+					"Activity": "Current Position",
+					"Description": "Truck Driver"
+				}, {
+					"Activity": "Date that joined the company",
+					"Description": "12th Feb 2006"
+				}]
+			});
+			oModel.setDefaultBindingMode("OneWay");
+			return oModel;
+
 		}
 
 	};

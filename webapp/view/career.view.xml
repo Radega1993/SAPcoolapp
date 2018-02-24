@@ -2,11 +2,7 @@
 	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
 	<Page title="{i18n>CAREER}">
 		<content>
-			<List headerText="">
-				<items>
-					<StandardListItem title="CAR LICENSE -----> final mark: 27 ✓✓"/>
-				</items>
-			</List>
+			<Panel expandable="true" expanded="false" headerText="CAR LICENSE -----> final mark: 28 ✓✓" width="auto" class="sapUiResponsiveMargin">
 			<Table items="{CarLicense>/mydata}">
 				<columns>
 					<Column width="12em">
@@ -24,16 +20,16 @@
 						<cells>
 							<ObjectIdentifier title="{CarLicense>Activity}" class="sapMTableContentMargin"/>
 							<Text text="{CarLicense>Description}"/>
-							<Text text="{CarLicense>Mark}"/>
+							<ObjectNumber number="{CarLicense>Mark}" state="{
+						path: 'CarLicense>Mark',
+						formatter: '.descriptionColor'
+					}"/>
 						</cells>
 					</ColumnListItem>
 				</items>
 			</Table>
-			<List headerText="">
-				<items>
-					<StandardListItem title="MATERIALS -----> final mark: 32 ✓✓"/>
-				</items>
-			</List>
+			</Panel>
+			<Panel expandable="true" expanded="false" headerText="MATERIALS -----> final mark: 32 ✓✓" width="auto" class="sapUiResponsiveMargin">
 			<Table items="{MaterialsCourse>/mydata}">
 				<columns>
 					<Column width="12em">
@@ -51,11 +47,15 @@
 						<cells>
 							<ObjectIdentifier title="{MaterialsCourse>Activity}" class="sapMTableContentMargin"/>
 							<Text text="{MaterialsCourse>Description}"/>
-							<Text text="{MaterialsCourse>Mark}"/>
+							<ObjectNumber number="{MaterialsCourse>Mark}" state="{
+						path: 'MaterialsCourse>Mark',
+						formatter: '.descriptionColor'
+					}"/>
 						</cells>
 					</ColumnListItem>
 				</items>
 			</Table>
+			</Panel>
 		</content>
 	</Page>
 </mvc:View>
