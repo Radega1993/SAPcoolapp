@@ -73,23 +73,62 @@
 				"async": true,
 				"viewPath": "coolapp1.coolapp1.view",
 				"controlAggregation": "pages",
-				"controlId": "idAppControl"
+				"controlId": "pageContainer"
 			},
 			"routes": [
 				{
-					"name": "RouteView1",
-					"pattern": "RouteView1",
+					"name": "home",
+					"pattern": "",
 					"target": [
-						"TargetView1"
+						"home"
+					]
+				},
+					{
+					"name": "course",
+					"pattern": "course",
+					"target": [
+						"course"
+					]
+				},
+					{
+					"name": "career",
+					"pattern": "career",
+					"target": [
+						"career"
+					]
+				},
+					{
+					"name": "jobprofile",
+					"pattern": "jobprofile",
+					"target": [
+						"jobprofile"
 					]
 				}
 			],
 			"targets": {
-				"TargetView1": {
+				"home": {
 					"viewType": "XML",
 					"transition": "slide",
 					"clearAggregation": true,
-					"viewName": "View1"
+					"viewName": "Home"
+				},
+				"course": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "course"
+				},
+				"career": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "career"
+				},
+				"jobprofile": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "jobprofile"
 				}
 			}
 		}

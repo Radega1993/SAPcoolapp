@@ -1,68 +1,31 @@
 <mvc:View controllerName="coolapp1.coolapp1.controller.index" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true" xmlns="sap.m">
-	<App id="idAppControl">
-		<pages>
-			<Page title="{i18n>title}">
-				<content>
-					
-					
-					
-				<Table items="{EmployeeDataTable>/mydata}">
-				    <columns>
-				      <Column
-				        width="12em">
-				        <Text text="Name" />
-				      </Column>
-				       <Column
-				        minScreenWidth="Tablet"
-				        demandPopin="true">
-				        <Text text="Salary" />
-				      </Column>
-				    </columns>
-				
-				
-				<items>
-				      <ColumnListItem>
-				        <cells>
-				          <ObjectIdentifier
-				            title="{EmployeeDataTable>name}"
-				            class="sapMTableContentMargin" />
-				          <Text
-				            text="{EmployeeDataTable>salary}" />
-				        </cells>
-				      </ColumnListItem>
-				    </items>
-				  </Table>
-    
-    			<Table items="{CourseDataTable>/mydata}">
-				    <columns>
-				      <Column
-				        width="12em">
-				        <Text text="Name" />
-				      </Column>
-				       <Column
-				        minScreenWidth="Tablet"
-				        demandPopin="true">
-				        <Text text="Salary" />
-				      </Column>
-				    </columns>
-				
-				
-				<items>
-				      <ColumnListItem>
-				        <cells>
-				          <ObjectIdentifier
-				            title="{CourseDataTable>name}"
-				            class="sapMTableContentMargin" />
-				          <Text
-				            text="{CourseDataTable>salary}" />
-				        </cells>
-				      </ColumnListItem>
-				    </items>
-				  </Table>
-    
-				</content>
-			</Page>
-		</pages>
-	</App>
+	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
+	<tnt:ToolPage id="toolPage">
+		<tnt:header>
+			<tnt:ToolHeader>
+				<Button id="sideNavigationToggleButton" icon="sap-icon://menu2" type="Transparent" press="onSideNavButtonPress">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="NeverOverflow"/>
+					</layoutData>
+				</Button>
+			</tnt:ToolHeader>
+		</tnt:header>
+		<tnt:sideContent>
+			<tnt:SideNavigation expanded="true" itemSelect="onMenuItem">
+				<tnt:NavigationList>
+					<tnt:NavigationListItem text="HOME" icon="sap-icon://home" key="Home"></tnt:NavigationListItem>
+					<tnt:NavigationListItem text="Course" icon="sap-icon://activities" key="course"></tnt:NavigationListItem>
+					<tnt:NavigationListItem text="Career" icon="sap-icon://accidental-leave" key="career"></tnt:NavigationListItem>
+					<tnt:NavigationListItem text="Job Profile" icon="sap-icon://customer" key="jobprofile"></tnt:NavigationListItem>
+				</tnt:NavigationList>
+			</tnt:SideNavigation>
+		</tnt:sideContent>
+		<tnt:mainContents>
+			<NavContainer id="pageContainer">
+				<pages>
+			
+				</pages>
+			</NavContainer>
+		</tnt:mainContents>
+	</tnt:ToolPage>
 </mvc:View>

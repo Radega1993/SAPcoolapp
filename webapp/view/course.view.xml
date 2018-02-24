@@ -1,0 +1,43 @@
+<mvc:View controllerName="coolapp1.coolapp1.controller.course" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
+		<Page title="{i18n>COURSE}">
+		<content>
+			<Table items="{EmployeeDataTable>/mydata}">
+				<columns>
+					<Column width="12em">
+						<Text text="Name"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Salary"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier title="{EmployeeDataTable>name}" class="sapMTableContentMargin"/>
+							<Text text="{EmployeeDataTable>salary}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+			<Table items="{CourseDataTable>/mydata}">
+				<columns>
+					<Column width="12em">
+						<Text text="Name"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Salary"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier title="{CourseDataTable>name}" class="sapMTableContentMargin"/>
+							<Text text="{CourseDataTable>salary}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
+</mvc:View>
