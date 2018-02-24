@@ -5,7 +5,7 @@
 			<Panel expandable="true" expanded="true" headerText="Bulldozer course -----> (IN PROGRES)" width="auto" class="sapUiResponsiveMargin">
 				<Table items="{Bulldozercourse>/mydata}">
 					<columns>
-						<Column width="12em">
+					 	<Column width="12em">
 							<Text text="Activity"/>
 						</Column>
 						<Column minScreenWidth="Tablet" demandPopin="true">
