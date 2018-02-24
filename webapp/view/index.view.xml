@@ -22,9 +22,7 @@
 		</tnt:sideContent>
 		<tnt:mainContents>
 			<NavContainer id="pageContainer">
-				<pages>
-			
-				</pages>
+				<pages></pages>
 			</NavContainer>
 		</tnt:mainContents>
 	</tnt:ToolPage>
