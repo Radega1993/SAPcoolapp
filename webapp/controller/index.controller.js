@@ -5,8 +5,9 @@ sap.ui.define([
 
 	return Controller.extend("coolapp1.coolapp1.controller.index", {
 		onInit: function() {
-			this.getView().setModel(models.createDataTableModel(), "EmployeeDataTable");
 			this.getView().setModel(models.createDataTableModel2(),"Bulldozercourse");
+			this.getView().setModel(models.createDataTableModel3(),"CarLicense");
+			this.getView().setModel(models.createDataTableModel4(),"MaterialsCourse");
 		},
 		onMenuItem: function(event){
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);

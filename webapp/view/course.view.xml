@@ -1,43 +1,50 @@
 <mvc:View controllerName="coolapp1.coolapp1.controller.course" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
 	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
-		<Page title="{i18n>COURSE}">
+	<Page title="{i18n>COURSE}">
 		<content>
-			<Table items="{EmployeeDataTable>/mydata}">
+			<List headerText="">
+				<items>
+					<StandardListItem title="Bulldozer course -----> (IN PROGRES)"/>
+				</items>
+			</List>
+			<Table items="{Bulldozercourse>/mydata}">
 				<columns>
 					<Column width="12em">
-						<Text text="Name"/>
+						<Text text="Activity"/>
 					</Column>
 					<Column minScreenWidth="Tablet" demandPopin="true">
-						<Text text="Salary"/>
+						<Text text="Description"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Mark"/>
 					</Column>
 				</columns>
 				<items>
 					<ColumnListItem>
 						<cells>
-							<ObjectIdentifier title="{EmployeeDataTable>name}" class="sapMTableContentMargin"/>
-							<Text text="{EmployeeDataTable>salary}"/>
+							<ObjectIdentifier title="{Bulldozercourse>Activity}" class="sapMTableContentMargin"/>
+							<Text text="{Bulldozercourse>Description}"/>
+							<Text text="{Bulldozercourse>Mark}"/>
 						</cells>
 					</ColumnListItem>
 				</items>
 			</Table>
-			<Table items="{CourseDataTable>/mydata}">
-				<columns>
-					<Column width="12em">
-						<Text text="Name"/>
-					</Column>
-					<Column minScreenWidth="Tablet" demandPopin="true">
-						<Text text="Salary"/>
-					</Column>
-				</columns>
+			<List headerText="AVALIABLE">
 				<items>
-					<ColumnListItem>
-						<cells>
-							<ObjectIdentifier title="{CourseDataTable>name}" class="sapMTableContentMargin"/>
-							<Text text="{CourseDataTable>salary}"/>
-						</cells>
-					</ColumnListItem>
+					<StandardListItem title="Healthy at work"/>
+					<StandardListItem title="Truck course"/>
+					<StandardListItem title="Drone course"/>
+					<StandardListItem title="Maintenance course"/>
+					<StandardListItem title="Safety and security 1"/>
 				</items>
-			</Table>
+			</List>
+			<List headerText="LOCKED">
+				<items>
+					<StandardListItem title="Tractor course"/>
+					<StandardListItem title="Safety and security 2"/>
+					<StandardListItem title="Manager course"/>
+				</items>
+			</List>
 		</content>
 	</Page>
 </mvc:View>

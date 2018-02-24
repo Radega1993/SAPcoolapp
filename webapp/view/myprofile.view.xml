@@ -2,6 +2,8 @@
 	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
 	<Page title="{i18n>MY PROFILE}">
 		<content>
+			
+			
 		</content>
 	</Page>
 </mvc:View>

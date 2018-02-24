@@ -2,7 +2,12 @@
 	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
 	<Page title="{i18n>CAREER}">
 		<content>
-			<Table items="{Bulldozercourse>/mydata}">
+			<List headerText="">
+				<items>
+					<StandardListItem title="CAR LICENSE -----> final mark: 27 ✓✓"/>
+				</items>
+			</List>
+			<Table items="{CarLicense>/mydata}">
 				<columns>
 					<Column width="12em">
 						<Text text="Activity"/>
@@ -17,34 +22,40 @@
 				<items>
 					<ColumnListItem>
 						<cells>
-							<ObjectIdentifier title="{Bulldozercourse>Activity}" class="sapMTableContentMargin"/>
-							<Text text="{Bulldozercourse>Description}"/>
-							<Text text="{Bulldozercourse>Mark}"/>
+							<ObjectIdentifier title="{CarLicense>Activity}" class="sapMTableContentMargin"/>
+							<Text text="{CarLicense>Description}"/>
+							<Text text="{CarLicense>Mark}"/>
 						</cells>
 					</ColumnListItem>
 				</items>
 			</Table>
-			<List headerText="Done">
+			<List headerText="">
 				<items>
-					<StandardListItem title="Healthy at work"/>
-					<StandardListItem title="Truck course"/>
-					<StandardListItem title="Drone course"/>
-					<StandardListItem title="Maintenance course"/>
+					<StandardListItem title="MATERIALS -----> final mark: 32 ✓✓"/>
 				</items>
 			</List>
-			<List headerText="Current">
+			<Table items="{MaterialsCourse>/mydata}">
+				<columns>
+					<Column width="12em">
+						<Text text="Activity"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Description"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Mark"/>
+					</Column>
+				</columns>
 				<items>
-					<StandardListItem title="Bulldozer course"/>
-					<StandardListItem title="Safety and security 1"/>
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier title="{MaterialsCourse>Activity}" class="sapMTableContentMargin"/>
+							<Text text="{MaterialsCourse>Description}"/>
+							<Text text="{MaterialsCourse>Mark}"/>
+						</cells>
+					</ColumnListItem>
 				</items>
-			</List>
-			<List headerText="Next">
-				<items>
-					<StandardListItem title="Tractor course"/>
-					<StandardListItem title="Safety and security 2"/>
-					<StandardListItem title="Manager course"/>
-				</items>
-			</List>
+			</Table>
 		</content>
 	</Page>
 </mvc:View>
