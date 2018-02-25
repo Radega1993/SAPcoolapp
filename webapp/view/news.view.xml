@@ -1,4 +1,4 @@
-<mvc:View controllerName="coolapp1.coolapp1.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+<mvc:View controllerName="coolapp1.coolapp1.controller.news" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
 	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:l="sap.ui.layout">
 	<Page title="{i18n>HOME}">
 		<content>
@@ -6,7 +6,7 @@
 				<Title text="Hello" />
 				<l:VerticalLayout class="sapUiMediumMargin">
 					<Text class="welcometitle sapUiMediumMarginBottom"
-						text="Welcome back, Jum \n You worked 8h today. \n You earned ¥10 508 and 15 points. \n Next position: Bulldozer Driver."/>
+						text="Welcome back, Jum \n You worked 8h today. \n You earned $10 and 5 points. \n Next position: Truck Driver."/>
 					<ProgressIndicator class="sapUiSmallMarginBottom" percentValue="40" displayValue="40%" showValue="true" state="Success"/>
 				</l:VerticalLayout>
 			</VBox>

@@ -34,6 +34,10 @@ sap.ui.define([
 			} else {
 				toggleButton.setTooltip('Small Size Navigation');
 			}
+		},
+		myProfileButtonPress: function(event) {
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("myprofile");
 		}
 	});
 

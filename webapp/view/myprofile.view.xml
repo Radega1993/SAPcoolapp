@@ -1,16 +1,18 @@
 <mvc:View controllerName="coolapp1.coolapp1.controller.myprofile" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
+	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:f="sap.f">
 	<Page title="{i18n>MY PROFILE}">
 		<content>
+			<HBox width="100%" justifyContent="Center" alignItems="Center">
+				<f:Avatar src="./img/jumyao.jpg" displaySize="Custom" customDisplaySize="250px"></f:Avatar>
+			</HBox>
 			<Table items="{PersonalCourse>/mydata}">
 				<columns>
 					<Column width="12em">
 						<Text text="My Info"/>
 					</Column>
-										<Column width="12em">
+					<Column width="12em">
 						<Text text=""/>
 					</Column>
-
 				</columns>
 				<items>
 					<ColumnListItem>
@@ -22,14 +24,12 @@
 					</ColumnListItem>
 				</items>
 			</Table>
-
-
-<Table items="{PersonalJob>/mydata}">
+			<Table items="{PersonalJob>/mydata}">
 				<columns>
 					<Column width="12em">
 						<Text text="My Job"/>
 					</Column>
-				<Column width="12em">
+					<Column width="12em">
 						<Text text=""/>
 					</Column>
 				</columns>
@@ -41,8 +41,7 @@
 						</cells>
 					</ColumnListItem>
 				</items>
-			</Table>	
-			
+			</Table>
 		</content>
 	</Page>
 </mvc:View>

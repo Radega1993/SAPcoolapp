@@ -112,13 +112,13 @@ sap.ui.define([
 			var oModel = new JSONModel({
 				"mydata": [{
 					"Activity": "Name",
-					"Description": "Yung"
+					"Description": "Jum"
 				}, {
 					"Activity": "Surname",
-					"Description": "Yu"
+					"Description": "Yao"
 				}, {
 					"Activity": "Street",
-					"Description": "Long Island Street 123"
+					"Description": "Koshu-Kaido 547"
 				}, {
 					"Activity": "Country",
 					"Description": "Japan"
@@ -127,7 +127,7 @@ sap.ui.define([
 					"Description": "Tokyo"
 				}, {
 					"Activity": "Phone",
-					"Description": "657 89 76 54"
+					"Description": "0081 3 5488 3911"
 				}]
 			});
 			oModel.setDefaultBindingMode("OneWay");
@@ -142,7 +142,7 @@ sap.ui.define([
 					"Description": "Truck Driver"
 				}, {
 					"Activity": "Date that joined the company",
-					"Description": "12th Feb 2006"
+					"Description": "12th Feb 2017"
 				}]
 			});
 			oModel.setDefaultBindingMode("OneWay");

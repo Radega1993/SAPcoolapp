@@ -103,6 +103,13 @@
 					"target": [
 						"myprofile"
 					]
+				},
+				{
+					"name": "news",
+					"pattern": "news",
+					"target": [
+						"news"
+					]
 				}
 			],
 			"targets": {
@@ -129,6 +136,12 @@
 					"transition": "slide",
 					"clearAggregation": true,
 					"viewName": "myprofile"
+				},
+				"news": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "news"
 				}
 			}
 		}
