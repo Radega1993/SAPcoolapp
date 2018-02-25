@@ -1,15 +1,21 @@
 <mvc:View controllerName="coolapp1.coolapp1.controller.news" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:l="sap.ui.layout">
-	<Page title="{i18n>HOME}">
-		<content>
-			<VBox width="100%" height="100%" alignItems="Center" >
-				<Title text="Hello" />
-				<l:VerticalLayout class="sapUiMediumMargin">
-					<Text class="welcometitle sapUiMediumMarginBottom"
-						text="Welcome back, Jum \n You worked 8h today. \n You earned $10 and 5 points. \n Next position: Truck Driver."/>
-					<ProgressIndicator class="sapUiSmallMarginBottom" percentValue="40" displayValue="40%" showValue="true" state="Success"/>
-				</l:VerticalLayout>
-			</VBox>
-		</content>
-	</Page>
+    height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:l="sap.ui.layout">
+    <Page title="{i18n>NEWS}">
+        <content>
+        	
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Monday January 22 Announcemnet: System maintenance"
+                subheader="I would like to inform you that we will have server maintenance. ... [READ MORE]" press="press">
+                <TileContent unit="January, 2018" footer="LANDLOG Ltd.">
+                    <ImageContent src="sap-icon://home-share" />
+                </TileContent>
+            </GenericTile>
+        
+            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="IoT Platform LANDLOG has released the first APIs"
+                subheader="LANDLOG Ltd. (President and Chief Executive Officer: Kosaku Igawa) has ...  [READ MORE]" press="press">
+                <TileContent unit="December 14, 2017" footer="LANDLOG Ltd.">
+                    <ImageContent src="sap-icon://multiselect-all" />
+                </TileContent>
+            </GenericTile>
+        </content>
+    </Page>
 </mvc:View>
