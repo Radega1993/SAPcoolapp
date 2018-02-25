@@ -148,6 +148,18 @@ sap.ui.define([
 			oModel.setDefaultBindingMode("OneWay");
 			return oModel;
 
+		},
+		createDataTableModel7  : function() {
+
+			var oModel = new JSONModel({
+				"mydata": [{
+					"title": "Log Out",
+					"icon": "sap-icon://log"
+				}]
+			});
+			oModel.setDefaultBindingMode("OneWay");
+			return oModel;
+
 		}
 
 	};

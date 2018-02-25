@@ -2,15 +2,14 @@
 	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:l="sap.ui.layout">
 	<Page title="{i18n>HOME}">
 		<content>
-			<l:VerticalLayout>
-				<Text title="Page Header Title" titleLevel="H2" text="Welcome back, Jum \n You worked 8h today. \n You earned $10 and 5 points. \n Next position: Truck Driver."/>
-				<ProgressIndicator
-				class="sapUiSmallMarginBottom"
-				percentValue="30"
-				displayValue="30%"
-				showValue="true"
-				state="Success" />
-			</l:VerticalLayout>
+			<VBox width="100%" height="100%" alignItems="Center" >
+				<Title text="Hello" />
+				<l:VerticalLayout class="sapUiMediumMargin">
+					<Text class="welcometitle sapUiMediumMarginBottom"
+						text="Welcome back, Jum \n You worked 8h today. \n You earned $10 and 5 points. \n Next position: Truck Driver."/>
+					<ProgressIndicator class="sapUiSmallMarginBottom" percentValue="40" displayValue="40%" showValue="true" state="Success"/>
+				</l:VerticalLayout>
+			</VBox>
 		</content>
 	</Page>
 </mvc:View>
