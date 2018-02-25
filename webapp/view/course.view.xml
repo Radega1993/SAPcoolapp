@@ -2,7 +2,7 @@
 	height="100%" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
 	<Page title="{i18n>COURSE}">
 		<content>
-			<Panel expandable="true" expanded="true" headerText="Bulldozer course -----> (IN PROGRES)" width="auto" class="sapUiResponsiveMargin">
+			<Panel expandable="true" expanded="true" headerText="Bulldozer course (IN PROGRES)" width="auto" class="sapUiResponsiveMargin">
 				<Table items="{Bulldozercourse>/mydata}">
 					<columns>
 					 	<Column width="12em">
@@ -29,11 +29,11 @@
 				<Panel expandable="true" expanded="false" headerText="AVAILABLE" width="auto" class="sapUiResponsiveMargin">
 				<List>
 					<items>
-						<StandardListItem title="Healthy at work"/>
-						<StandardListItem title="Truck course"/>
-						<StandardListItem title="Drone course"/>
-						<StandardListItem title="Maintenance course"/>
-						<StandardListItem title="Safety and security 1"/>
+						<StandardListItem title="Healthy at work" icon="sap-icon://media-play"/>
+						<StandardListItem title="Truck course" icon="sap-icon://media-play"/>
+						<StandardListItem title="Drone course" icon="sap-icon://media-play"/>
+						<StandardListItem title="Maintenance course" icon="sap-icon://media-play"/>
+						<StandardListItem title="Safety and security 1" icon="sap-icon://media-play"/>
 					</items>
 				</List>
 				</Panel>
